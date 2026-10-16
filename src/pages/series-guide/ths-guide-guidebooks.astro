@@ -1,0 +1,101 @@
+---
+import TextLayout from "../../layouts/TextLayout.astro";
+---
+
+<TextLayout>
+</TextLayout><style>    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0,0,0,.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(0,0,0,.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}                                               
+@media (prefers-color-scheme: light)
+{
+    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+}
+</style>
+<style>
+.title{
+    letter-spacing: 1px;
+}
+.para{
+  display: inline-block;
+  height:auto;    text-indent: 0em;
+  text-size-adjust: auto;
+  margin-bottom: 1%;
+    margin-top: 0.6cm;
+  margin-left: 8%;
+  margin-right: 8%;
+  letter-spacing: 0.17rem;
+  font-size: 115%;
+  text-align: center;
+
+}
+div{
+  text-align: center;
+}
+@media screen and (orientation: portrait) {
+  .line{
+  margin-top: 6.5%;
+}
+.para u a{
+  margin-top: 5%;
+  margin-bottom: 30px;
+}
+.para{
+    font-size: 135%;    text-indent: 0em;
+}
+}
+
+@media (min-width: 1601px)  { .Guide { grid-template-columns: repeat(4, 1fr);} }
+@media (max-width: 1200px)  { .img-special{ max-width: 35vw;} .Guide { grid-template-columns: repeat(2, 1fr);} }
+@media (min-width: 1201px) and (max-width: 1600px)  { .Guide { grid-template-columns: repeat(2, 1fr);} }
+</style>
+
+<title>Karis's Guide</title>
+<p style="margin-top: 1cm; font-size: 250%;">Official Books</p>
+<div class="over">
+<div class="Guide">
+<div class="media-card"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/dod-official-first-guide.avif?updatedAt=1781783692764" loading="lazy"><p class="title">Official Guide Book First Edition</p></div>
+<div class="media-card"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/dod-official-complete-guide.avif?updatedAt=1781783692565" loading="lazy"><p class="title">Official Guide Book Complete Edition</p></div>
+<div class="media-card"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/dod-the-materials.avif?updatedAt=1781783692751" loading="lazy"><p class="title">The Materials</p></div>
+<div class="media-card"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/dod-perfect-guide.avif?updatedAt=1781783692690" loading="lazy"><p class="title">Perfect Guide</p></div>
+<div class="media-card"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/dod-the-master-guide.avif?updatedAt=1781783692647" loading="lazy"><p class="title">The Master Guide</p></div>
+<div class="media-card"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/dod-2-memory-of-blood.avif?updatedAt=1781783692616" loading="lazy"><p class="title">Memory of Blood</p></div>
+<div class="media-card"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/dod-2-first-edition.avif?updatedAt=1781783692533" loading="lazy"><p class="title">Official Guide Book First Edition</p></div>
+<div class="media-card"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/dod-2-complete-edition.avif?updatedAt=1781783692623" loading="lazy"><p class="title">Official Guide Book Complete Edition</p></div>
+<div class="media-card"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/dod-2-perfect-guide.avif?updatedAt=1781783692638" loading="lazy"><p class="title">Perfect Guide</p></div>
+<div class="media-card"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/dod-2-strategy-guide.avif?updatedAt=1781783692621" loading="lazy"><p class="title">Strategy Guidebook</p></div>
+<div class="media-card"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/grimoire-nier-revised-edition.avif?updatedAt=1781783692789" loading="lazy"><p class="title">Grimoire NieR / Revised Edition</p></div>
+<div class="media-card"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/dod-3-first-edition.avif?updatedAt=1781783692465" loading="lazy"><p class="title">Official Guide Book First Edition</p></div>
+<div class="media-card"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/dod-3-complete-edition.avif?updatedAt=1781783692717" loading="lazy"><p class="title">Official Guide Book Complete Edition</p></div>
+<div class="media-card"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/dod-10th.avif?updatedAt=1781783692601" loading="lazy"><p class="title">10th Anniversary Box</p></div>
+<div class="media-card"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/nier-automata-world-guide.avif?updatedAt=1781783693112" loading="lazy"><p class="title">World Guide Volumes 1 & 2</p></div>
+<div class="media-card"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/koda-kazuma-art-book.avif?updatedAt=1781783692729" loading="lazy"><p class="title">Koda Kazuma Art Book</p></div>
+<div class="media-card"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/nier-automata-black-box.avif?updatedAt=1781783692787" loading="lazy"><p class="title">Black Box Edition Art Book</p></div>
+<div class="media-card"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/sinoalice-illustrations.avif?updatedAt=1781783693078" loading="lazy"><p class="title">Illustrations & Story Works</p></div>
+<div class="media-card"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/white-snow-edition.avif?updatedAt=1781783693367" loading="lazy"><p class="title">White Snow Edition</p></div>
+<div class="media-card"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/nier-rein-book.avif?updatedAt=1781783692976" loading="lazy"><p class="title">The Story of the Cage</p></div>
+</div>
+</div>
